@@ -1,0 +1,284 @@
+html {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+  }
+
+  body{
+    font-family: 'Poppins';font-size: 22px;
+
+  }
+
+ /************************************************Portada inicial************************************************/
+
+.main-content{
+    margin-top: 1vh;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.landingCarousel {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.text-slider{
+    background-image: url("./imagenes/fondo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    vertical-align: middle;
+    padding: 5vh 0;
+}
+
+.image-slider{
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+.nav_header{
+    margin-top: 12vh;
+    color: grey;
+    letter-spacing: .12em;
+}
+
+@media only screen and (max-width: 576px) {
+    
+    .css-typing p{
+        font-size: 26px !important;
+    }
+    
+}
+.callToActionButton{
+    margin-top: 5vh;
+    background-color: rgb(250, 1, 7);
+    color: white;
+    border-radius: 25px;
+}
+.image_container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.css-typing{
+    padding-top: 5vh;
+    
+
+}
+
+
+  .css-typing p {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .css-typing p:nth-child(1) {
+    width: 100%;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end) ;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 100%;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end) ;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(3) {
+    width: 100%;
+    opacity: 0;
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+  
+ /************************************************Nosotros************************************************/
+
+.quienes_somos{
+    padding-top: 40px;
+    text-align: center;
+}
+ .js-scroll{
+    
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+.js-scroll.scrolled{
+    opacity: 1;
+}
+.scroll_container{
+    margin: 70px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    min-height: 500px;
+    /*background-color: rgb(250, 1, 7);*/
+
+}
+
+.somos_text1{
+    text-align: center;
+    color: grey;
+    margin-top: 5vh;
+    vertical-align: middle;
+    padding: 5vh 0;
+}
+
+.somos_text1 p{
+    font-size: 24px;
+    
+}
+
+.img-nosotros1{
+    width: 100%;
+    height: auto;
+}
+
+/************************************************Nuestros servicios************************************************/
+
+.bi{
+    font-size: 48px;
+}
+#nuestros_servicios{
+    background-color: #D3D3D3;
+    color:black;
+}
+#nuestros_servicios .somos_text1{
+    color: black;
+}
+
+
+.contactenos_header{
+    text-align: center;
+}
+
+/************************************************Mi casa soñada************************************************/
+#micasasonada{
+    margin: auto;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+.faceb{
+    display: inline;
+    padding-right: 30px;
+}
+
+.instag{
+    display: inline;
+}
