@@ -10,6 +10,7 @@ html {
     html {
       font-size: 22px;
     }
+    
   }
 
   body{
@@ -17,199 +18,114 @@ html {
 
   }
 
- /************************************************Portada inicial************************************************/
-
-.main-content{
-    margin-top: 1vh;
-    text-align: center;
-    width: 100%;
-    height: auto;
-}
-.landingCarousel {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-.text-slider{
-    background-image: url("./imagenes/fondo2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    color: white;
-    vertical-align: middle;
-    padding: 5vh 0;
-}
-
-.image-slider{
-    width: 100%;
-    flex-grow: 1;
-}
-
-
-.nav_header{
-    margin-top: 12vh;
+  h2{
     color: grey;
-    letter-spacing: .12em;
-}
+    text-align: center;
+  }
 
-@media only screen and (max-width: 576px) {
-    
-    .css-typing p{
-        font-size: 26px !important;
-    }
-    
-}
-.callToActionButton{
-    margin-top: 5vh;
+  /*********************Menu principal*************************************************************************/
+  .main_menu_button{
     background-color: rgb(250, 1, 7);
     color: white;
-    border-radius: 25px;
-}
-.image_container{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-.css-typing{
-    padding-top: 5vh;
+    font-size: 16px;
+  }
+  #blog{
     
-
-}
-
-
-  .css-typing p {
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    overflow: hidden;
   }
-  .css-typing p:nth-child(1) {
-    width: 100%;
-    -webkit-animation: type 2s steps(40, end);
-    animation: type 2s steps(40, end) ;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  
-  .css-typing p:nth-child(2) {
-    width: 100%;
-    opacity: 0;
-    -webkit-animation: type2 2s steps(40, end);
-    animation: type2 2s steps(40, end) ;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  
-  .css-typing p:nth-child(3) {
-    width: 100%;
-    opacity: 0;
-    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      border: none;
-    }
-  }
-  
-  @-webkit-keyframes type {
-    0% {
-      width: 0;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      border: none;
-    }
-  }
-  
-  @keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  
-  @-webkit-keyframes type2 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    99.9% {
-      border-right: .15em solid orange;
-    }
-    100% {
-      opacity: 1;
-      border: none;
-    }
-  }
-  
-  @keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @-webkit-keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @-webkit-keyframes blink {
-    50% {
-      border-color: tranparent;
-    }
-  }
-  
- /************************************************Nosotros************************************************/
-
-.quienes_somos{
-    padding-top: 40px;
+ /************************************************Portada inicial************************************************/
+ @media only screen and (max-width: 600px) {
+   .imagen_portada{
+     padding-top: 100px;
+     z-index: -10;
+     height: auto;
+     width: 100%;
+   }
+   .text_section{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: auto;
+    padding-bottom: 50px;
+    color: white;
+    background-color: black;
+    box-shadow: 0px -20px 90px 20px rgb(0, 0, 10, 10);
+
+  }
+  .text_section h3{
+    padding-top: 50px;
+  }
+ }
+ @media only screen and (min-width: 600px) {
+    .imagen_portada{
+      z-index: -10;
+      margin-top: 80px;
+      height: calc(100vh - 80px);
+      width: 100%;
+    
+    }
+
+    .text_section{
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      color: white;
+      background-color: black;
+      box-shadow: 80px -90px 95px 40px rgb(0, 0, 10, 10);
+
+    }
+ }
+
+
+ .main_menu {
+  font-size: 16px;
 }
+.main_submenu{
+  font-size: 16px;
+}
+
+.text_section h3{
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+}
+.text_section h5{
+  line-height: 1.5;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  
+}
+
+.button_container{
+  margin-top: 30px;
+  width: 100%;
+  
+
+
+}
+
+ /************************************************Nosotros************************************************/
+ #nosotros{
+   text-align: center;
+ }
+
+ #nosotros p{
+   text-align: center;
+ }
+.titulo_nosotros{
+  margin-top: 120px;
+  text-align: center;
+  color: grey;
+}
+
  .js-scroll{
     
     opacity: 0;
@@ -230,15 +146,19 @@ html {
 }
 
 .somos_text1{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     color: grey;
-    margin-top: 5vh;
-    vertical-align: middle;
     padding: 5vh 0;
+    text-align:start;
 }
-
+.somos_text1 h5{
+  text-align: start;
+}
 .somos_text1 p{
-    font-size: 24px;
+    
     
 }
 
@@ -247,38 +167,236 @@ html {
     height: auto;
 }
 
-/************************************************Nuestros servicios************************************************/
-
-.bi{
+/************************************************Porque elegirnos************************************************/
+#porque_elegirnos{
+  min-height: 100vh;
+  text-align: center;
+}
+.elegirnos_header{
+  margin-top: 80px;
+  text-align: center;
+  
+}
+@media only screen and (max-width: 600px){
+  .elegirnos_text h5{
+    margin-top: 0px;
+    
+  }  
+  
+  .elegirnos_text p{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 60px;
+    
+  }  
+  
+  #porque_elegirnos .bi{
+    
     font-size: 48px;
+    margin-bottom: 60px;
+  }
+
+}
+
+@media only screen and (min-width: 600px){
+  .elegirnos_text h5{
+    margin-top: 20px;
+    font-size: 24px;
+  }  
+  
+  .elegirnos_text p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+  }  
+  
+  #porque_elegirnos .bi{
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+
+}
+
+
+
+/************************************************Nuestros servicios************************************************/
+@media only screen and (max-width: 600px){
+  .nuestros_servicios{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }  
+
+  .servicios_text1 .bi{
+    font-size: 58px;
+    margin-bottom: 60px;
+  }
+
+}
+
+@media only screen and (min-width: 600px){
+  .nuestros_servicios{
+    margin-top: 250px;
+    margin-bottom: 120px;
+    text-align: center;
+    color: grey;
+  }
+  
+  .servicios_text1 p{
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }  
+  
+  .servicios_text1 .bi{
+    font-size: 58px;
+    margin-bottom: 60px;
+  }
+
 }
 #nuestros_servicios{
-    background-color: #D3D3D3;
-    color:black;
-}
-#nuestros_servicios .somos_text1{
-    color: black;
+  background-color: gainsboro;
+  min-height: 100vh;
+  text-align: center;
+  
+  
 }
 
 
-.contactenos_header{
-    text-align: center;
-}
+
 
 /************************************************Mi casa soñada************************************************/
-#micasasonada{
-    margin: auto;
+
+@media only screen and (max-width: 600px){
+  #casa_sonada_imagen{
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+  }
+
+  #casa_sonada_imagen_2{
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+  }
+  #micasasonada{
+    text-align: center;
+   
+  }
+
+  #casa_sonada_texto{
+    margin-top: 20px;
+  }
+
+  #micasasonada h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+  }
+
+  .callToActionButton{
+    margin-bottom: 60px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .casasonada_2_texto{
+    margin-top: 30px;
+    vertical-align: middle;
+  }
 }
 
+@media only screen and (min-width: 600px){
+
+    #micasasonada{
+        margin: auto;
+        text-align: center;
+    }
+
+    .casasonada_2{
+      margin-top: 80px;
+      display: flex;
+      align-items: center;
+      
+    }
+
+    .casasonada_2_texto{
+      margin-top: 80px;
+      vertical-align: middle;
+    }
+    #micasasonada h4{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .micasasonada_header{
+      text-align: center;
+      margin-top: 120px;
+    }
+
+    #casa_sonada_imagen{
+      margin-top: 80px;
+      width: 100%;
+      height: auto;
+    }
+    #casa_sonada_imagen_2{
+      margin-top: 80px;
+      width: 100%;
+      height: auto;
+    }
+    #casa_sonada_texto{
+      margin-top: 80px;
+    }
+
+    /*********************************************Quiero invertir, Arquitectura comercial, Piscinas y quinchos*******************/
+    .quiero_invertir_header{
+      margin-top: 120px;
+    }
+    .quiero_invertir_cards{
+      margin-top: 80px;
+    
+    }
+    .arquitectura_comercial_header{
+      margin-top: 120px;
+    }
+    .arquitectura_comercial_cards{
+      margin-top: 80px;
+    }
+    
+    .piscinas_header{
+      margin-top: 120px;
+    }
+    
+    .piscinas_cards{
+      margin-top: 80px;
+    }
+}
+
+/************************************************Quiero invertir************************************************/
+
+
+.callToActionButton{
+  background-color: rgb(250, 1, 7);
+  color: white;
+}
 .card-img-top{
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
-.faceb{
-    display: inline;
-    padding-right: 30px;
+.bi .bi-instagram{
+    font-size: 28px;
 }
 
-.instag{
-    display: inline;
+.bi .bi-facebook{
+    font-size: 28px;
+}
+
+/****************************Contacto************************************/
+#contactenos{
+  margin-top: 30px;
+}
+
+.contacto_text{
+  text-align: center;
+  margin-top: 80px;
 }
